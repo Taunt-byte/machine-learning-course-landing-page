@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Aprenda Machine Learning com Python no curso fictício NeuralPath. Desenvolva projetos práticos e construa seu portfólio.">
+
+    <title>NeuralPath | Machine Learning com Python</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navegação -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">
+                <span class="logo-icon">N</span>
+                NeuralPath
+            </a>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#conteudo">Conteúdo</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#instrutor">Instrutor</a></li>
+                <li>
+                    <a href="#inscricao" class="button button-small">
+                        Inscreva-se
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <span class="eyebrow">
+                        <span class="status-dot"></span>
+                        FORMAÇÃO EM INTELIGÊNCIA ARTIFICIAL
+                    </span>
+
+                    <h1>
+                        Transforme dados em
+                        <span class="gradient-text">inteligência.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Aprenda Machine Learning com Python do zero.
+                        Desenvolva modelos inteligentes e construa projetos
+                        que demonstram suas habilidades.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#inscricao" class="button">
+                            Quero aprender Machine Learning
+                            <span>→</span>
+                        </a>
+
+                        <a href="#conteudo" class="button button-outline">
+                            Conhecer o curso
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div>
+                            <strong>30h</strong>
+                            <span>de conteúdo</span>
+                        </div>
+                        <div>
+                            <strong>8</strong>
+                            <span>módulos</span>
+                        </div>
+                        <div>
+                            <strong>4</strong>
+                            <span>projetos práticos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-card">
+                        <div class="code-header">
+                            <div class="window-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span>model.py</span>
+                        </div>
+
+                        <pre><code><span class="code-purple">from</span> sklearn.ensemble
+<span class="code-purple">import</span> RandomForestClassifier
+
+model = RandomForestClassifier(
+    n_estimators=<span class="code-cyan">100</span>,
+    random_state=<span class="code-cyan">42</span>
+)
+
+model.fit(X_train, y_train)
+
+predictions = model.predict(
+    X_test
+)
+
+<span class="code-green"># Modelo treinado!</span></code></pre>
+                    </div>
+
+                    <div class="floating-card floating-card-top">
+                        <span class="floating-icon">✦</span>
+                        <div>
+                            <strong>Machine Learning</strong>
+                            <span>Aprendizado na prática</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-card floating-card-bottom">
+                        <span class="chart-icon">↗</span>
+                        <div>
+                            <strong>Data-driven</strong>
+                            <span>Decisões baseadas em dados</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tecnologias -->
+        <section class="technology-strip">
+            <div class="container">
+                <p>APRENDA COM FERRAMENTAS UTILIZADAS NO MERCADO</p>
+                <div class="technology-list">
+                    <span>Python</span>
+                    <span>NumPy</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                    <span>Scikit-learn</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section class="section" id="sobre">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">SUA JORNADA COMEÇA AQUI</span>
+                    <h2>Aprenda fazendo.<br><span class="gradient-text">Evolua construindo.</span></h2>
+                    <p>
+                        Uma formação estruturada para transformar conceitos
+                        de inteligência artificial em habilidades práticas.
+                    </p>
+                </div>
+
+                <div class="benefits-grid">
+                    <article class="benefit-card">
+                        <div class="benefit-icon">⌘</div>
+                        <h3>Fundamentos sólidos</h3>
+                        <p>
+                            Entenda os conceitos de Machine Learning,
+                            estatística e preparação de dados.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="benefit-icon">⌁</div>
+                        <h3>Projetos reais</h3>
+                        <p>
+                            Desenvolva modelos de classificação,
+                            regressão e análise exploratória.
+                        </p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="benefit-icon">↗</div>
+                        <h3>Portfólio profissional</h3>
+                        <p>
+                            Organize seus projetos e aprenda a apresentar
+                            seus resultados de forma clara.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conteúdo -->
+        <section class="section section-dark" id="conteudo">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">PROGRAMA DO CURSO</span>
+                    <h2>Uma jornada do básico<br>ao <span class="gradient-text">primeiro modelo.</span></h2>
+                    <p>Explore os módulos e descubra o que você vai aprender.</p>
+                </div>
+
+                <div class="curriculum">
+
+                    <details class="module" open>
+                        <summary>
+                            <span class="module-number">01</span>
+                            <span class="module-title">
+                                <strong>Introdução ao Machine Learning</strong>
+                                <small>4 aulas · 3 horas</small>
+                            </span>
+                            <span class="module-arrow">＋</span>
+                        </summary>
+                        <ul>
+                            <li>O que é Machine Learning?</li>
+                            <li>Aprendizado supervisionado e não supervisionado</li>
+                            <li>Aplicações práticas da inteligência artificial</li>
+                            <li>Configurando o ambiente Python</li>
+                        </ul>
+                    </details>
+
+                    <details class="module">
+                        <summary>
+                            <span class="module-number">02</span>
+                            <span class="module-title">
+                                <strong>Python para Ciência de Dados</strong>
+                                <small>5 aulas · 4 horas</small>
+                            </span>
+                            <span class="module-arrow">＋</span>
+                        </summary>
+                        <ul>
+                            <li>NumPy e arrays</li>
+                            <li>Pandas e DataFrames</li>
+                            <li>Manipulação e limpeza de dados</li>
+                            <li>Visualização com Matplotlib</li>
+                        </ul>
+                    </details>
+
+                    <details class="module">
+                        <summary>
+                            <span class="module-number">03</span>
+                            <span class="module-title">
+                                <strong>Matemática e Estatística</strong>
+                                <small>4 aulas · 4 horas</small>
+                            </span>
+                            <span class="module-arrow">＋</span>
+                        </summary>
+                        <ul>
+                            <li>Estatística descritiva</li>
+                            <li>Probabilidade e distribuições</li>
+                            <li>Correlação e análise de variáveis</li>
+                        </ul>
+                    </details>
+
+                    <details class="module">
+                        <summary>
+                            <span class="module-number">04</span>
+                            <span class="module-title">
+                                <strong>Regressão e Previsão</strong>
+                                <small>4 aulas · 4 horas</small>
+                            </span>
+                            <span class="module-arrow">＋</span>
+                        </summary>
+                        <ul>
+                            <li>Regressão linear</li>
+                            <li>Treinamento e teste de modelos</li>
+                            <li>Métricas de avaliação</li>
+                        </ul>
+                    </details>
+
+                    <details class="module">
+                        <summary>
+                            <span class="module-number">05</span>
+                            <span class="module-title">
+                                <strong>Classificação e Clustering</strong>
+                                <small>5 aulas · 5 horas</small>
+                            </span>
+                            <span class="module-arrow">＋</span>
+                        </summary>
+                        <ul>
+                            <li>Árvores de decisão</li>
+                            <li>Random Forest</li>
+                            <li>K-means e agrupamento</li>
+                            <li>Matriz de confusão</li>
+                        </ul>
+                    </details>
+
+                    <details class="module">
+                        <summary>
+                            <span class="module-number">06</span>
+                            <span class="module-title">
+                                <strong>Projetos de Portfólio</strong>
+                                <small>4 projetos · 10 horas</small>
+                            </span>
+                            <span class="module-arrow">＋</span>
+                        </summary>
+                        <ul>
+                            <li>Previsão de preços de imóveis</li>
+                            <li>Classificação de espécies de flores</li>
+                            <li>Análise de clientes</li>
+                            <li>Projeto final de Machine Learning</li>
+                        </ul>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section class="section" id="projetos">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">APRENDIZADO PRÁTICO</span>
+                    <h2>Construa projetos<br><span class="gradient-text">que mostram seu potencial.</span></h2>
+                    <p>Transforme teoria em aplicações que você poderá apresentar no seu portfólio.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-visual project-purple">
+                            <span>🏠</span>
+                            <div class="project-chart">
+                                <div style="height: 35%"></div>
+                                <div style="height: 55%"></div>
+                                <div style="height: 45%"></div>
+                                <div style="height: 75%"></div>
+                                <div style="height: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">REGRESSÃO</span>
+                            <h3>Previsão de preços de imóveis</h3>
+                            <p>Crie um modelo capaz de estimar preços com base em características de imóveis.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-visual project-blue">
+                            <span>🌸</span>
+                            <div class="data-points">
+                                <i></i><i></i><i></i><i></i><i></i>
+                                <i></i><i></i><i></i><i></i><i></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">CLASSIFICAÇÃO</span>
+                            <h3>Classificador de flores</h3>
+                            <p>Treine um algoritmo para identificar espécies a partir de medidas botânicas.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-visual project-green">
+                            <span>📊</span>
+                            <div class="customer-groups">
+                                <i></i><i></i><i></i><i></i><i></i><i></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">CLUSTERING</span>
+                            <h3>Segmentação de clientes</h3>
+                            <p>Descubra padrões de comportamento utilizando algoritmos de agrupamento.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instrutor -->
+        <section class="section section-dark" id="instrutor">
+            <div class="container instructor-grid">
+                <div class="instructor-avatar">NP</div>
+
+                <div class="instructor-content">
+                    <span class="eyebrow">QUEM VAI TE GUIAR</span>
+                    <h2>Aprenda com quem<br><span class="gradient-text">ensina na prática.</span></h2>
+                    <p>
+                        Conheça Alex Martins, instrutor fictício da NeuralPath,
+                        apaixonado por Python, ciência de dados e educação.
+                        Sua proposta é tornar conceitos complexos acessíveis
+                        por meio de exemplos e projetos práticos.
+                    </p>
+                    <span class="fictional-note">
+                        Perfil demonstrativo criado para este projeto de portfólio.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">EXPERIÊNCIA DE APRENDIZADO</span>
+                    <h2>Aprender pode transformar<br><span class="gradient-text">sua trajetória.</span></h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>
+                            "O formato prático me ajudou a entender como os algoritmos
+                            funcionam e como aplicá-los em projetos."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MC</div>
+                            <div>
+                                <strong>Mariana Costa</strong>
+                                <span>Estudante de tecnologia</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <blockquote>
+                            "A estrutura dos módulos tornou o aprendizado mais
+                            organizado e facilitou minha evolução com Python."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RF</div>
+                            <div>
+                                <strong>Rafael Ferreira</strong>
+                                <span>Desenvolvedor iniciante</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="fictional-note centered">
+                    Depoimentos fictícios, incluídos exclusivamente para demonstrar o layout.
+                </p>
+            </div>
+        </section>
+
+        <!-- Inscrição -->
+        <section class="section enrollment-section" id="inscricao">
+            <div class="container">
+                <div class="enrollment-card">
+                    <div class="enrollment-content">
+                        <span class="eyebrow">INSCRIÇÕES DEMONSTRATIVAS</span>
+                        <h2>Seu próximo passo<br>começa com <span class="gradient-text">Python.</span></h2>
+                        <p>
+                            Acesse uma formação prática em Machine Learning
+                            e desenvolva habilidades para seus próximos projetos.
+                        </p>
+
+                        <ul class="enrollment-features">
+                            <li>✓ 30 horas de conteúdo</li>
+                            <li>✓ 4 projetos práticos</li>
+                            <li>✓ Material complementar</li>
+                            <li>✓ Acesso demonstrativo</li>
+                        </ul>
+                    </div>
+
+                    <div class="price-card">
+                        <span class="price-label">VALOR DEMONSTRATIVO</span>
+                        <div class="price">
+                            <span>R$</span>
+                            <strong>297</strong>
+                            <span>,00</span>
+                        </div>
+                        <p>Pagamento único fictício</p>
+
+                        <button class="button button-full" id="enroll-button">
+                            Quero me inscrever
+                            <span>→</span>
+                        </button>
+
+                        <small>Projeto fictício. Nenhuma cobrança será realizada.</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section" id="faq">
+            <div class="container faq-container">
+                <div class="section-heading">
+                    <span class="eyebrow">DÚVIDAS FREQUENTES</span>
+                    <h2>Perguntas e respostas.</h2>
+                </div>
+
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>Preciso saber Python para começar?</summary>
+                        <p>
+                            Conhecimentos básicos de Python são recomendados.
+                            A formação também apresenta os fundamentos necessários
+                            para trabalhar com dados.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>O curso é indicado para iniciantes?</summary>
+                        <p>
+                            Sim. O conteúdo foi planejado para apresentar
+                            os conceitos progressivamente, com exercícios práticos.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Receberei um certificado?</summary>
+                        <p>
+                            Esta demonstração não emite certificados reais.
+                            A informação está presente apenas para ilustrar
+                            uma página comercial de curso.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Como funciona a inscrição?</summary>
+                        <p>
+                            O botão de inscrição abre uma demonstração.
+                            Não há cadastro real, pagamento ou matrícula.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#" class="logo">
+                <span class="logo-icon">N</span>
+                NeuralPath
+            </a>
+
+            <p>Aprenda. Construa. Evolua.</p>
+
+            <span class="footer-disclaimer">
+                Projeto fictício desenvolvido para fins de portfólio.
+            </span>
+
+            <span class="copyright">
+                © <span id="current-year"></span> NeuralPath. Projeto demonstrativo.
+            </span>
+        </div>
+    </footer>
+
+    <!-- Modal demonstrativo -->
+    <dialog id="enrollment-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar modal">×</button>
+
+            <div class="modal-icon">✦</div>
+            <h2>Inscrição demonstrativa</h2>
+            <p>
+                Você chegou à etapa de inscrição do curso NeuralPath.
+                Esta é uma demonstração de portfólio e não realiza
+                cadastros ou pagamentos.
+            </p>
+
+            <form id="demo-form">
+                <label for="student-name">Seu nome</label>
+                <input
+                    type="text"
+                    id="student-name"
+                    placeholder="Digite seu nome"
+                    required
+                    minlength="2"
+                >
+
+                <label for="student-email">Seu e-mail</label>
+                <input
+                    type="email"
+                    id="student-email"
+                    placeholder="voce@email.com"
+                    required
+                >
+
+                <button type="submit" class="button button-full">
+                    Continuar demonstração
+                </button>
+            </form>
+
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+        </div>
+    </dialog>
+
+</body>
+</html>
